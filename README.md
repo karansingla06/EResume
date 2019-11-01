@@ -1,2 +1,2 @@
 # EResume
-An online resume website of myself.
+Online resume web application. Have a look at https://www.karansingla.com
