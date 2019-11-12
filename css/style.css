@@ -380,8 +380,8 @@ body.offcanvas {
 .colorlib-about,
 .colorlib-services,
 .colorlib-contact {
-  padding-top: 4em;
-  padding-bottom: 9em;
+  padding-top: 2em;
+  padding-bottom: 7em;
   clear: both;
   width: 100%;
   display: block; }
@@ -1483,4 +1483,18 @@ body.offcanvas {
   #typewriter {
     display: none;
   }
+}
+
+@media (max-width: 1000px) {
+  #hideform {
+    display: none;
+  }
+}
+
+
+@media (max-width: 920px) { 
+      #mainbgpic, .flexslider js-fullheight {
+            background-size: contain !important;
+            background-position: top !important; 
+      }
 }
