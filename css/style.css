@@ -380,8 +380,13 @@ body.offcanvas {
 .colorlib-about,
 .colorlib-services,
 .colorlib-contact {
+<<<<<<< HEAD
   padding-top: 2em;
   padding-bottom: 7em;
+=======
+  padding-top: 4em;
+  padding-bottom: 9em;
+>>>>>>> 90666239cf295e708a2d56e69bddab9d9549f3c0
   clear: both;
   width: 100%;
   display: block; }
@@ -1498,3 +1503,4 @@ body.offcanvas {
             background-position: top !important; 
       }
 }
+
