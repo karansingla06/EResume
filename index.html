@@ -1139,9 +1139,20 @@
 	<!-- Counters -->
 	<script src="js/jquery.countTo.js"></script>
 	
+
 	
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+
+<script src=https://assistant-web.watsonplatform.net/loadWatsonAssistantChat.js></script>
+<script>
+  window.loadWatsonAssistantChat({
+    integrationID: "e6f4f805-925e-4613-a3f4-8dbd672a60e1", // The ID of this integration.
+    region: "us-south" // The region your integration is hosted in.
+  }).then(function(instance){
+    instance.render();
+  });
+</script>
 
 	</body>
 </html>
