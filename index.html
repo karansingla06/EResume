@@ -48,10 +48,33 @@
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
+
 	<![endif]-->
 
+
 	</head>
+
+
+
 	<body oncontextmenu="return false;">
+<!--CSS Spinner
+<div class="spinner-wrapper">
+<div class="spinner"></div>
+</div>-->
+
+
+	<div id="containerLoading">
+		<section class="loadingPixel">
+			<section class="border one"></section>
+			<section class="border two"></section>
+			<section class="border three"></section>
+			<section class="border four"></section>
+			<section id="centerLoader"></section>
+		</section>
+	</div>
+
+
+
 	<div id="colorlib-page">
 		<div class="container-wrap">
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
@@ -193,9 +216,10 @@
 
     var typer = document.getElementById('typewriter');
     typewriter = setupTypewriter(typer);
+   
     typewriter.type();
-    setTimeout(clears, 6000);
-    setTimeout(clearf, 9500);
+    setTimeout(clears, 7000);
+    setTimeout(clearf, 12500);
     function clears(){
     document.getElementById('hhh').innerHTML = "";}
     function clearf(){
@@ -1112,9 +1136,11 @@
 	</div><!-- end:colorlib-page -->
 
 	
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
+	
+<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
 	<script src="js/bootstrap.min.js"></script>
@@ -1132,6 +1158,7 @@
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 
+
 <script src=https://assistant-web.watsonplatform.net/loadWatsonAssistantChat.js></script>
 <script>
   window.loadWatsonAssistantChat({
@@ -1142,6 +1169,21 @@
   });
 </script>
 
+
+<script>
+$(window).load(function() {
+//Preloader
+$('#centerLoader').hover(function(){
+		$('.loadingPixel').children().toggleClass('slowmo');
+	});
+var preloaderFadeOutTime = 4000;
+function hidePreloader() {
+var preloader = $('#containerLoading');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
+});
+</script>
 	</body>
 </html>
 
