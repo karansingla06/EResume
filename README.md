@@ -1,5 +1,6 @@
 # EResume
-My online cv website with a chatbot embedded.
-Have a look at it by visiting https://www.karansingla.com
+My online portfolio website with a chatbot to help the visitors with any queries regarding me.
+Have a look at it here https://www.karansingla.com
 
-Contact- karansingla.06@gmail.com | singlak@uwindsor.ca
+Contact- karansingla.06@gmail.com | singlak@uwindsor.ca </br>
+Phone- +1 519-977-2706
